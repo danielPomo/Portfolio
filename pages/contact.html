@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daniel Nicolás Pomo" />
+    <meta name="keywords" content="portfolio, developer, frontend" />
+    <meta
+      name="description"
+      content="My name is Daniel Nicolás Pomo and I am a frontend developer! Let us work together to make your ideas come true. Take a look at my work!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="navbar__logo" href="../index.html">Daniel Pomo</a>
+      <input class="navbar__btn" type="checkbox" id="hamburguer-btn" />
+      <label class="navbar__hamburguer" for="hamburguer-btn"></label>
+      <nav class="navbar">
+          <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="navbar__link--uppercase" href="../index.html">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link--uppercase" href="./about.html">About</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link--uppercase" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link--uppercase" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+      </nav>
+    </header>
+    <div class="maxwidth-center">
+      <main>
+        <section class="contact">
+          <article class="contact__container">
+            <h2 class="contact__title title">Let us work togheter!</h2>
+            <form class="contact__form" action="">
+              <div class="contact__item">
+                <input
+                  class="contact__input"
+                  id="name"
+                  type="text"
+                  required
+                  minlength="1"
+                  maxlength="120"
+                />
+                <label class="contact__label" for="name">Yor Name</label>
+                <span class="contact__line"></span>
+              </div>
+              <div class="contact__item">
+                <input
+                  class="contact__input"
+                  id="email"
+                  type="email"
+                  required
+                  minlength="1"
+                  maxlength="200"
+                />
+                <label class="contact__label" for="email">Your Email</label>
+                <span class="contact__line"></span>
+              </div>
+              <div class="contact__item">
+                <input
+                  class="contact__input"
+                  id="subject"
+                  type="text"
+                  required
+                  minlength="1"
+                  maxlength="60"
+                />
+                <label class="contact__label" for="subject">Subject</label>
+                <span class="contact__line"></span>
+              </div>
+              <div class="contact__item">
+                <textarea
+                  class="contact__input contact__input--textarea"
+                  name=""
+                  id="message"
+                  required
+                  minlength="1"
+                  maxlength="2000"
+                ></textarea>
+                <label class="contact__label" for="message">Your Message</label>
+                <span class="contact__line"></span>
+              </div>
+              <div class="contact__item">
+                <input class="contact__btn btn" type="submit" value="Get in touch!" />
+              </div>
+            </form>
+          </article>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img class="footer__img" src="../assets/img/logo.png" alt="">
+      </div>
+      <div class="footer__links">
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="../index.html">Home</a></li>
+          <li class="footer__item"><a class="footer__link" href="./about.html">About</a></li>
+          <li class="footer__item"><a class="footer__link" href="./portfolio.html">Portfolio</a></li>
+          <li class="footer__item"><a class="footer__link" href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__media">
+        <a href="#">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="#">
+          <i class='bx bxl-github' ></i>
+        </a>
+        <a href="#">
+          <i class='bx bxl-whatsapp' ></i>
+        </a>
+        <a href="#">
+          <i class='bx bx-mobile-alt' ></i>
+        </a>
+      </div>
+      <div class="footer__legend">
+        <p class="footer__rights">
+          &copy; All rights reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
