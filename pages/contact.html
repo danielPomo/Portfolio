@@ -54,7 +54,7 @@
         <section class="contact">
           <article class="contact__container">
             <h2 class="contact__title title">Let us work togheter!</h2>
-            <form class="contact__form" action="">
+            <form class="contact__form" action="https://formspree.io/f/xwkzpkeq" method="post">
               <div class="contact__item">
                 <input
                   class="contact__input"
@@ -63,6 +63,7 @@
                   required
                   minlength="1"
                   maxlength="120"
+                  name="full-name"
                 />
                 <label class="contact__label" for="name">Yor Name</label>
                 <span class="contact__line"></span>
@@ -75,6 +76,7 @@
                   required
                   minlength="1"
                   maxlength="200"
+                  name="email"
                 />
                 <label class="contact__label" for="email">Your Email</label>
                 <span class="contact__line"></span>
@@ -87,6 +89,7 @@
                   required
                   minlength="1"
                   maxlength="60"
+                  name="subject"
                 />
                 <label class="contact__label" for="subject">Subject</label>
                 <span class="contact__line"></span>
@@ -94,7 +97,7 @@
               <div class="contact__item">
                 <textarea
                   class="contact__input contact__input--textarea"
-                  name=""
+                  name="message"
                   id="message"
                   required
                   minlength="1"
