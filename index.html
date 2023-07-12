@@ -26,7 +26,8 @@
   </head>
   <body>
     <header class="header">
-      <a class="navbar__logo" href="./index.html">
+      <div class="header__wrapper">
+        <a class="navbar__logo" href="./index.html">
         Daniel Pomo
       </a>
       <input class="navbar__btn" type="checkbox" id="hamburguer-btn" />
@@ -53,34 +54,21 @@
           </li>
         </ul>
       </nav>
+      </div>
     </header>
-    <div class="maxwidth-center">
       <main class="home">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide">
-              <img src="./assets/img/github.png" />
-            </a>
-            <a href="#" class="swiper-slide">
-              <img src="./assets/img/linkedin.png" />
-            </a>
-            <a href="#" class="swiper-slide">
-              <img src="./assets/img/instagram.png" />
-            </a>
-            <a href="#" class="swiper-slide">
-              <img src="./assets/img/facebook.png" />
-            </a>
-            <a href="#" class="swiper-slide">
-              <img src="./assets/img/whatsapp.png" />
-            </a>
-            <a href="#" class="swiper-slide">
-              <img src="./assets/img/mobile.png" />
-            </a>
-          </div>
-          <div class="swiper-pagination"></div>
+        <section class="home__parallax">
+          <img class="home__img home__img--stars" src="./assets/img/stars.png" alt="stars" id="stars">
+          <img class="home__img home__img--moon" src="./assets/img/moon.png" alt="moon" id="moon">
+          <img class="home__img home__img--behind" src="./assets/img/mountains_behind.png" alt="mountains" id="mountains-behind">
+          <h2 class="home__text" id="paralax-text">Welcome to the mountains</h2>
+          <img class="home__img home__img--front" src="./assets/img/mountains_front.png" alt="mountains" id="mountains-front">
+        </section>
+        <div class="sec">
+          <h class="sec__title">Parallax scrolling effect</h>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nihil ullam laborum. Esse sunt veritatis, rem iure velit, officiis blanditiis amet architecto est laudantium cumque facilis nemo voluptate odit non! Molestiae iure magnam doloribus dolores inventore laudantium consequatur fugiat voluptatum, modi, velit molestias, repudiandae sunt alias omnis ipsum consectetur ea reiciendis numquam rem harum. Labore facilis iusto accusamus eligendi, blanditiis odio sunt repudiandae rerum beatae, sint possimus dicta eaque facere deleniti minima dolorum fugiat culpa! Iusto tempore iste ratione minus, numquam pariatur repellat rem dignissimos aut deleniti aperiam assumenda expedita, consequatur magnam at illo aliquid! Tempora voluptas explicabo dolorem consequatur?</p>
         </div>
       </main>
-    </div>
     <footer class="footer">
       <div class="footer__logo">
         <img class="footer__img" src="./assets/img/logo.png" alt="">
@@ -113,7 +101,7 @@
         </p>
       </div>
     </footer>
+    <script src="./js/parallax.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/wheel.js"></script>
   </body>
 </html>
